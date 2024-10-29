@@ -21,16 +21,19 @@ fi
 
 # Define paths for the executable, destination, and symlink
 LS_EXECUTABLE="$PROJECT_DIR/ls/target/release/ls"
-CAT_EXECUTABLE="$PROJECT_DIR/cat/target/release/cat"
-ECHO_EXECUTABLE="$PROJECT_DIR/echo/target/release/echo"
-FIND_EXECUTABLE="$PROJECT_DIR/find/target/release/find"
 LS_DESTINATION="/usr/local/bin/ls_rust"
-CAT_DESTINATION="/usr/local/bin/cat_rust"
-ECHO_DESTINATION="/usr/local/bin/echo_rust"
-FIND_DESTINATION="/usr/local/bin/find_rust"
 LS_SYMLINK="/usr/local/bin/ruls"
+
+CAT_EXECUTABLE="$PROJECT_DIR/cat/target/release/cat"
+CAT_DESTINATION="/usr/local/bin/cat_rust"
 CAT_SYMLINK="/usr/local/bin/rcat"
+
+ECHO_EXECUTABLE="$PROJECT_DIR/echo/target/release/echo"
+ECHO_DESTINATION="/usr/local/bin/echo_rust"
 ECHO_SYMLINK="/usr/local/bin/recho"
+
+FIND_EXECUTABLE="$PROJECT_DIR/find/target/release/find"
+FIND_DESTINATION="/usr/local/bin/find_rust"
 FIND_SYMLINK="/usr/local/bin/rfind"
 
 # Check for root permissions
@@ -58,14 +61,13 @@ fi
 # Create a symlink
 echo "Creating symlink at $LS_SYMLINK..."
 sudo ln -sf "$LS_DESTINATION" "$LS_SYMLINK"
+echo "Installation complete! You can now run the program with 'ruls'"
 echo "Creating symlink at $CAT_SYMLINK..."
 sudo ln -sf "$CAT_DESTINATION" "$CAT_SYMLINK"
+echo "Installation complete! You can now run the program with 'rcat'"
 echo "Creating symlink at $ECHO_SYMLINK..."
 sudo ln -sf "$ECHO_DESTINATION" "$ECHO_SYMLINK"
+echo "Installation complete! You can now run the program with 'recho'"
 echo "Creating symlink at $FIND_SYMLINK..."
 sudo ln -sf "$FIND_DESTINATION" "$FIND_SYMLINK"
-
-echo "Installation complete! You can now run the program with 'ruls'"
-echo "Installation complete! You can now run the program with 'rcat'"
-echo "Installation complete! You can now run the program with 'recho'"
 echo "Installation complete! You can now run the program with 'rfind'"
