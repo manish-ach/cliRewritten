@@ -21,4 +21,10 @@ sudo ./install.sh
 ```
 
 4. running
+
 run them by using recho or rcat or ruls.
+```
+recho message #replace message with your desired output
+rcat filename
+ruls
+```
