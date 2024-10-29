@@ -1,5 +1,5 @@
 # cliRewritten
-CLI tools rewritten by beginner in rust
+CLI tools rewritten by beginner in rust (MAC/linux)
 
 # prerequisites(for installing)
 1. rust must be installed
