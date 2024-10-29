@@ -21,9 +21,9 @@ fn main() {
 
         // Output with color and additional info
         if path.is_dir() {
-            println!("🗂️  {} - {}", file_name.blue(), file_type);
+            println!(" {} - {}", file_name.blue(), file_type.green());
         } else {
-            println!("📄 {} - {}", file_name.red(), file_type);
+            println!(" {} - {}", file_name.red(), file_type.green());
         }
     }
 }
