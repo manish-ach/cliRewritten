@@ -22,9 +22,10 @@ sudo ./install.sh
 
 4. running
 
-run them by using recho or rcat or ruls.
+run them by using recho or rcat or ruls or rfind.
 ```
 recho message #replace message with your desired output
 rcat filename
 ruls
+rfind <filename> <directory to search(optional)>
 ```
