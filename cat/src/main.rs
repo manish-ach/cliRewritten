@@ -1,3 +1,4 @@
+use colored::*;
 use std::env;
 use std::fs::File;
 use std::io::{self, BufRead, BufReader};
@@ -9,7 +10,7 @@ fn main() -> io::Result<()> {
         let reader = BufReader::new(file);
 
         for line in reader.lines() {
-            println!("{}", line?);
+            println!("{}", line?.blue());
         }
     }
     Ok(())
