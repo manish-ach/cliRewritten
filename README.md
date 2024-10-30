@@ -25,7 +25,7 @@ sudo ./install.sh
 run them by using recho or rcat or ruls or rfind.
 ```
 recho message #replace message with your desired output
-rcat filename
+rcat <filename> <line number(optional)>
 ruls
 rfind <filename> <directory to search(optional)>
 ```
