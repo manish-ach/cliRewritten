@@ -1,5 +1,6 @@
 # cliRewritten
 CLI tools rewritten by beginner in rust (MAC/linux)
+(in progress, grep not available currently)
 
 # prerequisites(for installing)
 1. rust must be installed
